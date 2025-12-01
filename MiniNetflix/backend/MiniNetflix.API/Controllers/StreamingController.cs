@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using MiniNetflix.Core.Interfaces;
+using MiniNetflix.Core.Entities;
 
 namespace MiniNetflix.API.Controllers;
 
@@ -7,11 +8,11 @@ namespace MiniNetflix.API.Controllers;
 [Route("api/[controller]")]
 public class StreamingController : ControllerBase
 {
-    private readonly IGoogleDriveService _driveService;
+    private readonly IFileStorageService _storageService;
 
-    public StreamingController(IGoogleDriveService driveService)
+    public StreamingController(IFileStorageService storageService)
     {
-        _driveService = driveService;
+        _storageService = storageService;
     }
 
     [HttpGet("{fileId}")]
@@ -19,13 +20,14 @@ public class StreamingController : ControllerBase
     {
         try
         {
-            var streamingUrl = await _driveService.GetStreamingUrlAsync(fileId);
-            var metadata = await _driveService.GetFileMetadataAsync(fileId);
+            var streamingUrl = await _storageService.GetStreamingUrlAsync(fileId);
+            var metadata = await _storageService.GetFileMetadataAsync(fileId);
 
             return Ok(new
             {
                 streamingUrl,
-                metadata
+                metadata,
+                storageType = _storageService.GetStorageType().ToString()
             });
         }
         catch (Exception ex)
@@ -39,7 +41,7 @@ public class StreamingController : ControllerBase
     {
         try
         {
-            var metadata = await _driveService.GetFileMetadataAsync(fileId);
+            var metadata = await _storageService.GetFileMetadataAsync(fileId);
             return Ok(metadata);
         }
         catch (Exception ex)
@@ -53,8 +55,38 @@ public class StreamingController : ControllerBase
     {
         try
         {
-            var streamingUrl = await _driveService.GetStreamingUrlAsync(fileId);
+            var streamingUrl = await _storageService.GetStreamingUrlAsync(fileId);
             return Redirect(streamingUrl);
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(new { error = ex.Message });
+        }
+    }
+
+    [HttpGet("local/{*fileId}")]
+    public async Task<IActionResult> StreamLocalFile(string fileId)
+    {
+        try
+        {
+            // Only serve local files through this endpoint
+            if (_storageService.GetStorageType() != StorageType.Local)
+            {
+                return BadRequest(new { error = "This endpoint is only for local files" });
+            }
+
+            var stream = await _storageService.GetFileStreamAsync(fileId);
+            var metadata = await _storageService.GetFileMetadataAsync(fileId);
+            
+            var mimeType = metadata.ContainsKey("mimeType") 
+                ? metadata["mimeType"].ToString() 
+                : "application/octet-stream";
+
+            return File(stream, mimeType ?? "application/octet-stream", enableRangeProcessing: true);
+        }
+        catch (FileNotFoundException)
+        {
+            return NotFound(new { error = "File not found" });
         }
         catch (Exception ex)
         {

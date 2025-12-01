@@ -29,10 +29,10 @@ public class UploadController : ControllerBase
         try
         {
             using var stream = file.OpenReadStream();
-            var fileId = await _driveService.UploadFileAsync(stream, file.FileName, file.ContentType, folderId);
+            var fileId = await _storageService.UploadFileAsync(stream, file.FileName, file.ContentType, folderId);
             
             // Get metadata
-            var metadata = await _driveService.GetFileMetadataAsync(fileId);
+            var metadata = await _storageService.GetFileMetadataAsync(fileId);
 
             // Save to database
             var driveFile = new GoogleDriveFile
@@ -43,6 +43,7 @@ public class UploadController : ControllerBase
                 FileSize = file.Length,
                 MovieId = movieId,
                 FileType = FileType.Video,
+                StorageType = _storageService.GetStorageType(),
                 CreatedAt = DateTime.UtcNow
             };
 
@@ -83,7 +84,7 @@ public class UploadController : ControllerBase
         try
         {
             using var stream = file.OpenReadStream();
-            var fileId = await _driveService.UploadFileAsync(stream, file.FileName, "text/vtt", folderId);
+            var fileId = await _storageService.UploadFileAsync(stream, file.FileName, "text/vtt", folderId);
 
             // Save to database
             var driveFile = new GoogleDriveFile
@@ -94,6 +95,7 @@ public class UploadController : ControllerBase
                 FileSize = file.Length,
                 MovieId = movieId,
                 FileType = FileType.Subtitle,
+                StorageType = _storageService.GetStorageType(),
                 CreatedAt = DateTime.UtcNow
             };
 
@@ -118,7 +120,7 @@ public class UploadController : ControllerBase
     {
         try
         {
-            var folderId = await _driveService.CreateFolderAsync(request.FolderName, request.ParentFolderId);
+            var folderId = await _storageService.CreateFolderAsync(request.FolderName, request.ParentFolderId);
             
             return Ok(new
             {

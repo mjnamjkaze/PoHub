@@ -19,8 +19,15 @@ builder.Services.AddControllers()
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// Register services
-builder.Services.AddScoped<IGoogleDriveService, GoogleDriveService>();
+// Register storage service using factory
+builder.Services.AddScoped<IFileStorageService>(serviceProvider =>
+{
+    var configuration = serviceProvider.GetRequiredService<IConfiguration>();
+    var logger = serviceProvider.GetRequiredService<ILogger<FileStorageFactory>>();
+    var factory = new FileStorageFactory(configuration, logger);
+    return factory.CreateStorageService();
+});
+
 builder.Services.AddScoped<IMovieRepository, MovieRepository>();
 
 // Configure Hangfire
