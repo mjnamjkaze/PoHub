@@ -47,7 +47,7 @@ export default function MovieDetailPage() {
         );
     }
 
-    const backdropUrl = movie.backdropUrl || movie.posterUrl || '/placeholder-backdrop.jpg';
+    const backdropUrl = movie.backdropUrl || movie.posterUrl || '/placeholder-backdrop.svg';
     const hasVideo = movie.driveFiles?.some(f => f.fileType === FileType.Video);
 
     return (

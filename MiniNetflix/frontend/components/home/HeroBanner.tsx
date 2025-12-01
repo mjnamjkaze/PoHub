@@ -10,11 +10,11 @@ interface HeroBannerProps {
 }
 
 export default function HeroBanner({ movie }: HeroBannerProps) {
-    const backdropUrl = movie.backdropUrl || movie.posterUrl || '/placeholder-backdrop.jpg';
+    const backdropUrl = movie.backdropUrl || movie.posterUrl || '/placeholder-backdrop.svg';
     const videoFile = movie.driveFiles?.find(f => f.fileType === 0);
 
     return (
-        <div className="relative h-[80vh] w-full">
+        <div className="relative h-[85vh] w-full">
             {/* Background Image */}
             <div className="absolute inset-0">
                 <Image
@@ -30,24 +30,24 @@ export default function HeroBanner({ movie }: HeroBannerProps) {
 
             {/* Content */}
             <div className="relative h-full flex items-center">
-                <div className="container-custom">
-                    <div className="max-w-2xl">
-                        <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 text-shadow">
+                <div className="container mx-auto px-4 md:px-12">
+                    <div className="max-w-2xl pt-20">
+                        <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 drop-shadow-lg">
                             {movie.title}
                         </h1>
 
-                        <div className="flex items-center space-x-4 mb-4">
-                            {movie.year && <span className="text-white text-lg">{movie.year}</span>}
+                        <div className="flex items-center space-x-4 mb-6">
+                            {movie.year && <span className="text-green-400 font-semibold">{movie.year}</span>}
                             {movie.imdbRating && (
-                                <span className="text-yellow-400 text-lg font-semibold">
-                                    ★ {movie.imdbRating}
+                                <span className="text-white border border-gray-500 px-1 text-sm">
+                                    {movie.imdbRating}
                                 </span>
                             )}
-                            {movie.runtime && <span className="text-white text-lg">{movie.runtime} min</span>}
+                            {movie.runtime && <span className="text-white">{movie.runtime} min</span>}
                         </div>
 
                         {movie.description && (
-                            <p className="text-white text-lg mb-8 line-clamp-3 text-shadow">
+                            <p className="text-white text-lg mb-8 line-clamp-3 drop-shadow-md">
                                 {movie.description}
                             </p>
                         )}
@@ -55,15 +55,15 @@ export default function HeroBanner({ movie }: HeroBannerProps) {
                         <div className="flex space-x-4">
                             {videoFile && (
                                 <Link href={`/watch/${movie.id}`}>
-                                    <button className="btn-primary flex items-center space-x-2">
-                                        <Play size={24} fill="white" />
+                                    <button className="bg-white text-black px-8 py-3 rounded flex items-center space-x-2 font-bold hover:bg-opacity-80 transition">
+                                        <Play size={24} fill="black" />
                                         <span>Play</span>
                                     </button>
                                 </Link>
                             )}
 
                             <Link href={`/movie/${movie.id}`}>
-                                <button className="btn-secondary flex items-center space-x-2">
+                                <button className="bg-[rgba(109,109,110,0.7)] text-white px-8 py-3 rounded flex items-center space-x-2 font-bold hover:bg-[rgba(109,109,110,0.9)] transition">
                                     <Info size={24} />
                                     <span>More Info</span>
                                 </button>

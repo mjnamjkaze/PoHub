@@ -1,0 +1,68 @@
+[
+    {
+        "title": "Dark Shadows",
+        "description": "An intense action thriller following a former special ops agent who must protect a key witness from a dangerous criminal organization. Packed with explosive action sequences and dramatic twists.",
+        "year": 2024,
+        "genre": "Action, Thriller",
+        "runtime": 142,
+        "imdbRating": 8.5,
+        "posterUrl": "/images/posters/action-1.png",
+        "backdropUrl": "/images/backdrops/action-1.png",
+        "isSeries": false
+    },
+    {
+        "title": "Neon Future",
+        "description": "In a dystopian future where technology controls every aspect of life, a hacker discovers a conspiracy that could change humanity forever. A visually stunning sci-fi adventure.",
+        "year": 2024,
+        "genre": "Sci-Fi, Adventure",
+        "runtime": 128,
+        "imdbRating": 8.2,
+        "posterUrl": "/images/posters/scifi-1.png",
+        "backdropUrl": "/images/backdrops/scifi-1.png",
+        "isSeries": false
+    },
+    {
+        "title": "Love in Paris",
+        "description": "A heartwarming romantic drama about two strangers who meet by chance in Paris and embark on a journey of love and self-discovery in the city of lights.",
+        "year": 2024,
+        "genre": "Romance, Drama",
+        "runtime": 115,
+        "imdbRating": 7.8,
+        "posterUrl": "/images/posters/romance-1.png",
+        "backdropUrl": "/images/backdrops/romance-1.png",
+        "isSeries": false
+    },
+    {
+        "title": "The Last Stand",
+        "description": "A gripping war drama about courage and sacrifice on the battlefield.",
+        "year": 2023,
+        "genre": "War, Drama",
+        "runtime": 156,
+        "imdbRating": 8.7,
+        "posterUrl": "/images/posters/action-1.png",
+        "backdropUrl": "/images/backdrops/action-1.png",
+        "isSeries": false
+    },
+    {
+        "title": "Cosmic Journey",
+        "description": "An epic space exploration adventure across the galaxy.",
+        "year": 2024,
+        "genre": "Sci-Fi, Adventure",
+        "runtime": 145,
+        "imdbRating": 8.0,
+        "posterUrl": "/images/posters/scifi-1.png",
+        "backdropUrl": "/images/backdrops/scifi-1.png",
+        "isSeries": false
+    },
+    {
+        "title": "Summer Romance",
+        "description": "A beautiful love story that unfolds during a magical summer vacation.",
+        "year": 2024,
+        "genre": "Romance, Comedy",
+        "runtime": 102,
+        "imdbRating": 7.5,
+        "posterUrl": "/images/posters/romance-1.png",
+        "backdropUrl": "/images/backdrops/romance-1.png",
+        "isSeries": false
+    }
+]
