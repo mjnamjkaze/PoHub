@@ -85,8 +85,7 @@
               "RelativeToolTip": "MiniNetflix.API\\Controllers\\UploadController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T16:02:27.644Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T16:02:27.644Z"
             },
             {
               "$type": "Document",
@@ -98,8 +97,7 @@
               "RelativeToolTip": "MiniNetflix.Infrastructure\\Repositories\\MovieRepository.cs",
               "ViewState": "AgIAAC0AAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T15:46:54.187Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T15:46:54.187Z"
             },
             {
               "$type": "Document",
@@ -111,8 +109,7 @@
               "RelativeToolTip": "MiniNetflix.Infrastructure\\Migrations\\ApplicationDbContextModelSnapshot.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T15:46:51.84Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T15:46:51.84Z"
             },
             {
               "$type": "Document",
@@ -124,8 +121,7 @@
               "RelativeToolTip": "MiniNetflix.Infrastructure\\Migrations\\20251201153638_InitialCreate.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T15:46:50.788Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T15:46:50.788Z"
             },
             {
               "$type": "Document",
@@ -137,8 +133,7 @@
               "RelativeToolTip": "MiniNetflix.Infrastructure\\Data\\ApplicationDbContext.cs",
               "ViewState": "AgIAADoAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T15:46:43.639Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T15:46:43.639Z"
             },
             {
               "$type": "Document",
@@ -150,8 +145,7 @@
               "RelativeToolTip": "MiniNetflix.Core\\Interfaces\\IMovieRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T15:45:48.584Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T15:45:48.584Z"
             },
             {
               "$type": "Document",
@@ -163,8 +157,7 @@
               "RelativeToolTip": "MiniNetflix.Infrastructure\\Services\\GoogleDriveService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T15:33:19.542Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T15:33:19.542Z"
             },
             {
               "$type": "Document",
@@ -174,8 +167,7 @@
               "ToolTip": "C:\\Users\\HaiNam\\AppData\\Roaming\\Microsoft\\UserSecrets\\33671a0b-fed7-44af-b469-2c9847724835\\secrets.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-01T15:32:09.876Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T15:32:09.876Z"
             },
             {
               "$type": "Document",
@@ -185,7 +177,7 @@
               "RelativeDocumentMoniker": "MiniNetflix.API\\Program.cs",
               "ToolTip": "D:\\PoHub\\MiniNetflix\\backend\\MiniNetflix.API\\Program.cs",
               "RelativeToolTip": "MiniNetflix.API\\Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-01T15:38:54.179Z",
               "EditorCaption": ""
@@ -200,8 +192,7 @@
               "RelativeToolTip": "MiniNetflix.API\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-01T15:31:14.389Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T15:31:14.389Z"
             },
             {
               "$type": "Document",
@@ -213,8 +204,7 @@
               "RelativeToolTip": "MiniNetflix.Core\\Interfaces\\IGoogleDriveService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T15:45:46.789Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T15:45:46.789Z"
             },
             {
               "$type": "Document",
@@ -226,8 +216,7 @@
               "RelativeToolTip": "MiniNetflix.Core\\Entities\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T15:46:35.957Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T15:46:35.957Z"
             },
             {
               "$type": "Document",
@@ -239,8 +228,7 @@
               "RelativeToolTip": "MiniNetflix.Core\\Entities\\Movie.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T15:46:34.916Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T15:46:34.916Z"
             },
             {
               "$type": "Document",
@@ -252,8 +240,7 @@
               "RelativeToolTip": "MiniNetflix.Core\\Entities\\GoogleDriveFile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T15:45:56.525Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T15:45:56.525Z"
             },
             {
               "$type": "Document",
@@ -265,8 +252,7 @@
               "RelativeToolTip": "MiniNetflix.API\\appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-01T15:32:03.208Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T15:32:03.208Z"
             }
           ]
         }
