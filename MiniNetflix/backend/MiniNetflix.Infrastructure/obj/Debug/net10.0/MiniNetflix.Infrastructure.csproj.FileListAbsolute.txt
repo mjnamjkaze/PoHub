@@ -13,3 +13,4 @@ D:\PoHub\MiniNetflix\backend\MiniNetflix.Infrastructure\obj\Debug\net10.0\MiniNe
 D:\PoHub\MiniNetflix\backend\MiniNetflix.Infrastructure\obj\Debug\net10.0\refint\MiniNetflix.Infrastructure.dll
 D:\PoHub\MiniNetflix\backend\MiniNetflix.Infrastructure\obj\Debug\net10.0\MiniNetflix.Infrastructure.pdb
 D:\PoHub\MiniNetflix\backend\MiniNetflix.Infrastructure\obj\Debug\net10.0\ref\MiniNetflix.Infrastructure.dll
+D:\PoHub\MiniNetflix\backend\MiniNetflix.Infrastructure\obj\Debug\net10.0\MiniNetflix.Infrastructure.sourcelink.json

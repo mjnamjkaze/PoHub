@@ -242,4 +242,5 @@ D:\PoHub\MiniNetflix\backend\MiniNetflix.API\obj\Debug\net10.0\refint\MiniNetfli
 D:\PoHub\MiniNetflix\backend\MiniNetflix.API\obj\Debug\net10.0\MiniNetflix.API.pdb
 D:\PoHub\MiniNetflix\backend\MiniNetflix.API\obj\Debug\net10.0\MiniNetflix.API.genruntimeconfig.cache
 D:\PoHub\MiniNetflix\backend\MiniNetflix.API\obj\Debug\net10.0\ref\MiniNetflix.API.dll
+D:\PoHub\MiniNetflix\backend\MiniNetflix.API\obj\Debug\net10.0\MiniNetflix.API.sourcelink.json
 D:\PoHub\MiniNetflix\backend\MiniNetflix.API\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt

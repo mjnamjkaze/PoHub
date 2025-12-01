@@ -9,3 +9,4 @@ D:\PoHub\MiniNetflix\backend\MiniNetflix.Core\obj\Debug\net10.0\MiniNetflix.Core
 D:\PoHub\MiniNetflix\backend\MiniNetflix.Core\obj\Debug\net10.0\refint\MiniNetflix.Core.dll
 D:\PoHub\MiniNetflix\backend\MiniNetflix.Core\obj\Debug\net10.0\MiniNetflix.Core.pdb
 D:\PoHub\MiniNetflix\backend\MiniNetflix.Core\obj\Debug\net10.0\ref\MiniNetflix.Core.dll
+D:\PoHub\MiniNetflix\backend\MiniNetflix.Core\obj\Debug\net10.0\MiniNetflix.Core.sourcelink.json
