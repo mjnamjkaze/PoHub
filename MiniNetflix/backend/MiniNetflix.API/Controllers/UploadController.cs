@@ -9,12 +9,12 @@ namespace MiniNetflix.API.Controllers;
 [Route("api/[controller]")]
 public class UploadController : ControllerBase
 {
-    private readonly IGoogleDriveService _driveService;
+    private readonly IFileStorageService _storageService;
     private readonly ApplicationDbContext _context;
 
-    public UploadController(IGoogleDriveService driveService, ApplicationDbContext context)
+    public UploadController(IFileStorageService storageService, ApplicationDbContext context)
     {
-        _driveService = driveService;
+        _storageService = storageService;
         _context = context;
     }
 

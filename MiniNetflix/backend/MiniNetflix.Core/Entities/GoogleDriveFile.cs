@@ -14,6 +14,7 @@ public class GoogleDriveFile
     public string? SubtitleFileId { get; set; } // Google Drive file ID for subtitle
     public int? MovieId { get; set; }
     public int? EpisodeId { get; set; }
+    public StorageType StorageType { get; set; } = StorageType.GoogleDrive; // Default to GoogleDrive for backward compatibility
     public DateTime CreatedAt { get; set; }
     public DateTime? UpdatedAt { get; set; }
 
@@ -29,4 +30,10 @@ public enum FileType
     Poster,
     Backdrop,
     Thumbnail
+}
+
+public enum StorageType
+{
+    GoogleDrive,
+    Local
 }

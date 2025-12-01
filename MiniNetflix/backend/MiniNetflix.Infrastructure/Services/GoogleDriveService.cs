@@ -8,7 +8,7 @@ using Microsoft.Extensions.Configuration;
 
 namespace MiniNetflix.Infrastructure.Services;
 
-public class GoogleDriveService : IGoogleDriveService
+public class GoogleDriveService : IFileStorageService
 {
     private readonly DriveService _driveService;
     private readonly IConfiguration _configuration;
@@ -163,6 +163,7 @@ public class GoogleDriveService : IGoogleDriveService
                 MimeType = file.MimeType,
                 FileSize = file.Size ?? 0,
                 FileType = DetermineFileType(file.MimeType),
+                StorageType = StorageType.GoogleDrive,
                 CreatedAt = DateTime.UtcNow
             };
 
@@ -184,6 +185,22 @@ public class GoogleDriveService : IGoogleDriveService
         }
 
         return driveFiles;
+    }
+
+    public async Task<Stream> GetFileStreamAsync(string fileId)
+    {
+        var request = _driveService.Files.Get(fileId);
+        var stream = new MemoryStream();
+        
+        await request.DownloadAsync(stream);
+        stream.Position = 0;
+        
+        return stream;
+    }
+
+    public StorageType GetStorageType()
+    {
+        return StorageType.GoogleDrive;
     }
 
     private async Task MakeFilePublicAsync(string fileId)
