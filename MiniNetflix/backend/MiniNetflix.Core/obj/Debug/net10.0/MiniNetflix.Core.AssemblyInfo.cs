@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MiniNetflix.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6784bc3bd19faa7f75e9b05cfaa2c09997717416")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0d96d20ddb9e52aed165a92a5a7043f872214749")]
 [assembly: System.Reflection.AssemblyProductAttribute("MiniNetflix.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MiniNetflix.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
