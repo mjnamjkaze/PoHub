@@ -58,12 +58,12 @@ public class ApplicationDbContext : DbContext
             entity.HasOne(e => e.Movie)
                 .WithMany(m => m.DriveFiles)
                 .HasForeignKey(e => e.MovieId)
-                .OnDelete(DeleteBehavior.Cascade);
+                .OnDelete(DeleteBehavior.Restrict);
             
             entity.HasOne(e => e.Episode)
                 .WithMany(ep => ep.DriveFiles)
                 .HasForeignKey(e => e.EpisodeId)
-                .OnDelete(DeleteBehavior.Cascade);
+                .OnDelete(DeleteBehavior.Restrict);
         });
 
         // User configuration

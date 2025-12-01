@@ -12,7 +12,7 @@ using MiniNetflix.Infrastructure.Data;
 namespace MiniNetflix.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20251201151832_InitialCreate")]
+    [Migration("20251201153638_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -289,12 +289,12 @@ namespace MiniNetflix.Infrastructure.Migrations
                     b.HasOne("MiniNetflix.Core.Entities.Episode", "Episode")
                         .WithMany("DriveFiles")
                         .HasForeignKey("EpisodeId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("MiniNetflix.Core.Entities.Movie", "Movie")
                         .WithMany("DriveFiles")
                         .HasForeignKey("MovieId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.Navigation("Episode");
 

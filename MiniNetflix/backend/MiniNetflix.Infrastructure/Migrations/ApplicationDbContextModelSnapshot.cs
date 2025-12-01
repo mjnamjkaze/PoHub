@@ -286,12 +286,12 @@ namespace MiniNetflix.Infrastructure.Migrations
                     b.HasOne("MiniNetflix.Core.Entities.Episode", "Episode")
                         .WithMany("DriveFiles")
                         .HasForeignKey("EpisodeId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("MiniNetflix.Core.Entities.Movie", "Movie")
                         .WithMany("DriveFiles")
                         .HasForeignKey("MovieId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.Navigation("Episode");
 
