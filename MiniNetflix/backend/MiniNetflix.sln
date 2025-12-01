@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniNetflix.API", "MiniNetflix.API\MiniNetflix.API.csproj", "{630AC381-9ACF-43D3-B646-E4D15896441B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniNetflix.Core", "MiniNetflix.Core\MiniNetflix.Core.csproj", "{500832B7-DD6B-49E0-91FE-5818D998A7DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniNetflix.Infrastructure", "MiniNetflix.Infrastructure\MiniNetflix.Infrastructure.csproj", "{81506C9B-F854-4643-8A74-3F1DCFA53DA2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{630AC381-9ACF-43D3-B646-E4D15896441B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{630AC381-9ACF-43D3-B646-E4D15896441B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{630AC381-9ACF-43D3-B646-E4D15896441B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{630AC381-9ACF-43D3-B646-E4D15896441B}.Debug|x64.Build.0 = Debug|Any CPU
+		{630AC381-9ACF-43D3-B646-E4D15896441B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{630AC381-9ACF-43D3-B646-E4D15896441B}.Debug|x86.Build.0 = Debug|Any CPU
+		{630AC381-9ACF-43D3-B646-E4D15896441B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{630AC381-9ACF-43D3-B646-E4D15896441B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{630AC381-9ACF-43D3-B646-E4D15896441B}.Release|x64.ActiveCfg = Release|Any CPU
+		{630AC381-9ACF-43D3-B646-E4D15896441B}.Release|x64.Build.0 = Release|Any CPU
+		{630AC381-9ACF-43D3-B646-E4D15896441B}.Release|x86.ActiveCfg = Release|Any CPU
+		{630AC381-9ACF-43D3-B646-E4D15896441B}.Release|x86.Build.0 = Release|Any CPU
+		{500832B7-DD6B-49E0-91FE-5818D998A7DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{500832B7-DD6B-49E0-91FE-5818D998A7DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{500832B7-DD6B-49E0-91FE-5818D998A7DD}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{500832B7-DD6B-49E0-91FE-5818D998A7DD}.Debug|x64.Build.0 = Debug|Any CPU
+		{500832B7-DD6B-49E0-91FE-5818D998A7DD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{500832B7-DD6B-49E0-91FE-5818D998A7DD}.Debug|x86.Build.0 = Debug|Any CPU
+		{500832B7-DD6B-49E0-91FE-5818D998A7DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{500832B7-DD6B-49E0-91FE-5818D998A7DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{500832B7-DD6B-49E0-91FE-5818D998A7DD}.Release|x64.ActiveCfg = Release|Any CPU
+		{500832B7-DD6B-49E0-91FE-5818D998A7DD}.Release|x64.Build.0 = Release|Any CPU
+		{500832B7-DD6B-49E0-91FE-5818D998A7DD}.Release|x86.ActiveCfg = Release|Any CPU
+		{500832B7-DD6B-49E0-91FE-5818D998A7DD}.Release|x86.Build.0 = Release|Any CPU
+		{81506C9B-F854-4643-8A74-3F1DCFA53DA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81506C9B-F854-4643-8A74-3F1DCFA53DA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81506C9B-F854-4643-8A74-3F1DCFA53DA2}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{81506C9B-F854-4643-8A74-3F1DCFA53DA2}.Debug|x64.Build.0 = Debug|Any CPU
+		{81506C9B-F854-4643-8A74-3F1DCFA53DA2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{81506C9B-F854-4643-8A74-3F1DCFA53DA2}.Debug|x86.Build.0 = Debug|Any CPU
+		{81506C9B-F854-4643-8A74-3F1DCFA53DA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81506C9B-F854-4643-8A74-3F1DCFA53DA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81506C9B-F854-4643-8A74-3F1DCFA53DA2}.Release|x64.ActiveCfg = Release|Any CPU
+		{81506C9B-F854-4643-8A74-3F1DCFA53DA2}.Release|x64.Build.0 = Release|Any CPU
+		{81506C9B-F854-4643-8A74-3F1DCFA53DA2}.Release|x86.ActiveCfg = Release|Any CPU
+		{81506C9B-F854-4643-8A74-3F1DCFA53DA2}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

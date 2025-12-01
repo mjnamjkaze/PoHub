@@ -1,0 +1,15 @@
+D:\PoHub\MiniNetflix\backend\MiniNetflix.Infrastructure\bin\Debug\net10.0\MiniNetflix.Infrastructure.deps.json
+D:\PoHub\MiniNetflix\backend\MiniNetflix.Infrastructure\bin\Debug\net10.0\MiniNetflix.Infrastructure.dll
+D:\PoHub\MiniNetflix\backend\MiniNetflix.Infrastructure\bin\Debug\net10.0\MiniNetflix.Infrastructure.pdb
+D:\PoHub\MiniNetflix\backend\MiniNetflix.Infrastructure\bin\Debug\net10.0\MiniNetflix.Core.dll
+D:\PoHub\MiniNetflix\backend\MiniNetflix.Infrastructure\bin\Debug\net10.0\MiniNetflix.Core.pdb
+D:\PoHub\MiniNetflix\backend\MiniNetflix.Infrastructure\obj\Debug\net10.0\MiniNetflix.Infrastructure.csproj.AssemblyReference.cache
+D:\PoHub\MiniNetflix\backend\MiniNetflix.Infrastructure\obj\Debug\net10.0\MiniNetflix.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\PoHub\MiniNetflix\backend\MiniNetflix.Infrastructure\obj\Debug\net10.0\MiniNetflix.Infrastructure.AssemblyInfoInputs.cache
+D:\PoHub\MiniNetflix\backend\MiniNetflix.Infrastructure\obj\Debug\net10.0\MiniNetflix.Infrastructure.AssemblyInfo.cs
+D:\PoHub\MiniNetflix\backend\MiniNetflix.Infrastructure\obj\Debug\net10.0\MiniNetflix.Infrastructure.csproj.CoreCompileInputs.cache
+D:\PoHub\MiniNetflix\backend\MiniNetflix.Infrastructure\obj\Debug\net10.0\MiniNetf.968CCD17.Up2Date
+D:\PoHub\MiniNetflix\backend\MiniNetflix.Infrastructure\obj\Debug\net10.0\MiniNetflix.Infrastructure.dll
+D:\PoHub\MiniNetflix\backend\MiniNetflix.Infrastructure\obj\Debug\net10.0\refint\MiniNetflix.Infrastructure.dll
+D:\PoHub\MiniNetflix\backend\MiniNetflix.Infrastructure\obj\Debug\net10.0\MiniNetflix.Infrastructure.pdb
+D:\PoHub\MiniNetflix\backend\MiniNetflix.Infrastructure\obj\Debug\net10.0\ref\MiniNetflix.Infrastructure.dll
