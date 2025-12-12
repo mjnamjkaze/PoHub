@@ -1,0 +1,162 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Film {
+  id            Int      @id @default(autoincrement())
+  title         String
+  originalTitle String?  @map("original_title")
+  description   String?
+  posterUrl     String?  @map("poster_url")
+  backgroundUrl String?  @map("background_url")
+  year          Int
+  country       String?
+  rating        Float    @default(0)
+  director      String?
+  cast          String?
+  viewCount     Int      @default(0) @map("view_count")
+  totalEpisodes Int      @default(1) @map("total_episodes")
+  type          String   @default("Movie") // Movie or Series
+  badge         String? // New, Hot, Full, Trailer
+  createdAt     DateTime @default(now()) @map("created_at")
+  updatedAt     DateTime @updatedAt @map("updated_at")
+  isActive      Boolean  @default(true) @map("is_active")
+
+  // Relations
+  filmGenres    FilmGenre[]
+  episodes      Episode[]
+  filmViews     FilmView[]
+  userFavorites UserFavorite[]
+  viewHistories ViewHistory[]
+  videoSources  VideoSource[]
+
+  @@map("films")
+}
+
+model Genre {
+  id          Int     @id @default(autoincrement())
+  name        String
+  slug        String  @unique
+  description String?
+
+  // Relations
+  filmGenres FilmGenre[]
+
+  @@map("genres")
+}
+
+model FilmGenre {
+  id      Int @id @default(autoincrement())
+  filmId  Int @map("film_id")
+  genreId Int @map("genre_id")
+
+  // Relations
+  film  Film  @relation(fields: [filmId], references: [id], onDelete: Cascade)
+  genre Genre @relation(fields: [genreId], references: [id], onDelete: Cascade)
+
+  @@unique([filmId, genreId])
+  @@map("film_genres")
+}
+
+model Episode {
+  id            Int      @id @default(autoincrement())
+  filmId        Int      @map("film_id")
+  episodeNumber Int      @map("episode_number")
+  title         String?
+  description   String?
+  duration      Int      @default(0) // in minutes
+  createdAt     DateTime @default(now()) @map("created_at")
+  updatedAt     DateTime @updatedAt @map("updated_at")
+  isActive      Boolean  @default(true) @map("is_active")
+
+  // Relations
+  film         Film          @relation(fields: [filmId], references: [id], onDelete: Cascade)
+  videoSources VideoSource[]
+
+  @@map("episodes")
+}
+
+model VideoSource {
+  id          Int     @id @default(autoincrement())
+  episodeId   Int?    @map("episode_id")
+  filmId      Int?    @map("film_id")
+  sourceType  String  @default("Local") // Drive, Local, External
+  url         String
+  quality     String? // 720p, 1080p, 4K
+  serverName  String? // Google Drive, Server 1, Server 2
+  subtitleUrl String? @map("subtitle_url")
+  isDefault   Boolean @default(false) @map("is_default")
+
+  // Relations
+  episode Episode? @relation(fields: [episodeId], references: [id], onDelete: Cascade)
+  film    Film?    @relation(fields: [filmId], references: [id], onDelete: Cascade)
+
+  @@map("video_sources")
+}
+
+model User {
+  id           Int       @id @default(autoincrement())
+  email        String    @unique
+  username     String    @unique
+  passwordHash String    @map("password_hash")
+  fullName     String?   @map("full_name")
+  avatarUrl    String?   @map("avatar_url")
+  createdAt    DateTime  @default(now()) @map("created_at")
+  lastLoginAt  DateTime? @map("last_login_at")
+  isActive     Boolean   @default(true) @map("is_active")
+
+  // Relations
+  viewHistories ViewHistory[]
+  userFavorites UserFavorite[]
+
+  @@map("users")
+}
+
+model ViewHistory {
+  id       Int      @id @default(autoincrement())
+  userId   Int      @map("user_id")
+  filmId   Int      @map("film_id")
+  progress Int      @default(0) // in seconds
+  viewedAt DateTime @default(now()) @map("viewed_at")
+
+  // Relations
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  film Film @relation(fields: [filmId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, filmId])
+  @@map("view_histories")
+}
+
+model UserFavorite {
+  id      Int      @id @default(autoincrement())
+  userId  Int      @map("user_id")
+  filmId  Int      @map("film_id")
+  addedAt DateTime @default(now()) @map("added_at")
+
+  // Relations
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  film Film @relation(fields: [filmId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, filmId])
+  @@map("user_favorites")
+}
+
+model FilmView {
+  id        Int      @id @default(autoincrement())
+  filmId    Int      @map("film_id")
+  viewedAt  DateTime @default(now()) @map("viewed_at")
+  ipAddress String?  @map("ip_address")
+
+  // Relations
+  film Film @relation(fields: [filmId], references: [id], onDelete: Cascade)
+
+  @@map("film_views")
+}
